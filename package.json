@@ -1,0 +1,28 @@
+{
+  "name": "openclaw-memory-auto-recall",
+  "version": "0.1.0",
+  "description": "OpenClaw plugin — automatically inject relevant memories into agent context before each prompt",
+  "type": "module",
+  "license": "MIT",
+  "author": "Yeongyu Kim <code.yeon.gyu@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code-yeongyu/openclaw-memory-auto-recall.git"
+  },
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "memory",
+    "auto-recall",
+    "rag",
+    "context-injection"
+  ],
+  "peerDependencies": {
+    "openclaw": ">=2026.1.26"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

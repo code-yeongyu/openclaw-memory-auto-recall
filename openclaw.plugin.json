@@ -1,0 +1,41 @@
+{
+  "id": "memory-auto-recall",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "maxResults": {
+        "type": "number",
+        "minimum": 1,
+        "maximum": 10
+      },
+      "minScore": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "minPromptLength": {
+        "type": "number",
+        "minimum": 1
+      }
+    }
+  },
+  "uiHints": {
+    "maxResults": {
+      "label": "Max Results",
+      "help": "Maximum number of memory snippets to inject (default: 3)",
+      "placeholder": "3"
+    },
+    "minScore": {
+      "label": "Min Score",
+      "help": "Minimum similarity score threshold (default: 0.3)",
+      "placeholder": "0.3"
+    },
+    "minPromptLength": {
+      "label": "Min Prompt Length",
+      "help": "Skip auto-recall for prompts shorter than this (default: 10)",
+      "placeholder": "10",
+      "advanced": true
+    }
+  }
+}
