@@ -17,6 +17,17 @@
       "minPromptLength": {
         "type": "number",
         "minimum": 1
+      },
+      "showScore": {
+        "type": "boolean"
+      },
+      "autoCapture": {
+        "type": "boolean"
+      },
+      "captureMaxPerRun": {
+        "type": "number",
+        "minimum": 1,
+        "maximum": 10
       }
     }
   },
@@ -30,6 +41,22 @@
       "label": "Min Score",
       "help": "Minimum similarity score threshold (default: 0.3)",
       "placeholder": "0.3"
+    },
+    "showScore": {
+      "label": "Show Similarity Score",
+      "help": "Show similarity % next to each memory snippet (default: true)",
+      "placeholder": "true"
+    },
+    "autoCapture": {
+      "label": "Auto Capture",
+      "help": "Automatically save memorable info from conversations to memory files (default: false)",
+      "placeholder": "false"
+    },
+    "captureMaxPerRun": {
+      "label": "Max Captures Per Run",
+      "help": "Maximum memories to save per conversation (default: 3)",
+      "placeholder": "3",
+      "advanced": true
     },
     "minPromptLength": {
       "label": "Min Prompt Length",
