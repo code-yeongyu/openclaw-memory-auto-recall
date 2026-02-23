@@ -9,9 +9,9 @@
  * after each conversation so memory-core picks them up on next index.
  */
 
-import { createHash } from "node:crypto";
-import fs from "node:fs/promises";
-import path from "node:path";
+import { createHash } from "crypto";
+import fs from "fs/promises";
+import path from "path";
 import type { OpenClawPluginApi } from "openclaw/plugin-sdk";
 
 type AutoRecallConfig = {
