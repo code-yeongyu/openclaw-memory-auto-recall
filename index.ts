@@ -170,6 +170,7 @@ function extractUserTexts(messages: unknown[]): string[] {
     }
   }
   return texts;
+}
 
 const memoryAutoRecallPlugin = {
   id: "memory-auto-recall",
