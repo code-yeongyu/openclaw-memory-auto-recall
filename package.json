@@ -17,6 +17,9 @@
     "rag",
     "context-injection"
   ],
+  "devDependencies": {
+    "@types/node": "^22.19.11"
+  },
   "peerDependencies": {
     "openclaw": ">=2026.1.26"
   },
