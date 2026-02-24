@@ -1,5 +1,5 @@
 {
-  "name": "openclaw-memory-auto-recall",
+  "name": "memory-auto-recall",
   "version": "0.1.0",
   "description": "OpenClaw plugin — automatically inject relevant memories into agent context before each prompt",
   "type": "module",
